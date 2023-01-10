@@ -1,29 +1,44 @@
-Introduction
-This demo project is an example to demonstrate the features of the Agconnect Crash Service Xamarin Android Plugin.
-
-Installation
-
-In the Solution Explorer panel, right click on the solution name and select Manage NuGet Packages. Search for Huawei.Agconnect.AgconnectCrash and install the package into your Xamarin.Android projects.
-
-Place your agconnect-services.json file inside the project
-
-Step 1: Sign in to AppGallery Connect and select your project from My Projects. Then go to Project Settings tab. On the page that is displayed, click agconnect-services.json button.
-
-Step 2: Once you download your agconnect-services.json file, place it under the Assets folder of the demo project.
-
-Step 3: Package name in the agconnect-services.json and the package name in the AndroidManifest.xml file should be same
-
-Environment Setting
-
-Android 4.2 JellyBean (API level 17) and later versions
-
-A minimum version of Visual Studio 2019 16.3 or Visual Studio for Mac 2019 8.3 are required to build and compile
+# Cloud function Xamarin CodeLab
 
 
-Testing Steps
-Step 1: Tap makeException to trigger a non-fatal exception event, Tap CustomReport to generate a custom crash report, tap makeCrash to trigger a crash, and re-launch the app
+## Directory
 
-Step 2: Login AGC webpage to check crash report.
+- [Intro] (#Intro)
+- [Prepare Environment] (#Prepare Environment)
+- [Quick Start] (#Quick Start)
+- [License] (#License)
 
-Licensing and Terms
-Agconnect Crash Service Xamarin Android Plugin - Demo is licensed under Apache 2.0 license
+## Introduction
+AppGallery Connect Cloud Function enables serverless computing. It provides the Function as a Service (FaaS) capability to simplify application development and O&M, making it easier for you to implement functions and quickly build service capabilities. This demo provides you with a way to integrate cloud capabilities into your Xamarin application.
+
+## Prepare the environment.
+
+* You need to set up a complete Visual Studio or Xcode development environment.
+* Familiarity with Visual Studio or Xcode development languages.
+* Complete account registration and real-name authentication as a developer.
+
+## Quick Start
+
+1. If you do not have a Huawei Developer account, you need to register an account with (https://developer.huawei.com/consumer/en/doc/start/registration-and-verification-000001053628148) and pass the authentication.
+
+2. Log in to [AppGalleryConnect] (https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-get-started) with your account, create a project, and add apps.
+
+3. On the My Projects page, select your project and application, choose Build > Functions, and enable FunctionGraph.
+
+4. Choose Project Settings > Manage APIs and enable FunctionGraph.
+
+5. Go to the general information page, copy the SDK code segment json from AppGallery Connect, and paste the json to the code segment of const **agConnectConfig** in the created cloud function.vue ().
+
+6. Run the following code in the terminal of the demo path and the demo will start.
+
+```bash
+# install dependencies
+npm install
+
+# run demo
+npm start
+` ` `
+
+## License
+
+This demo is licensed under the [Apache License, Version 2.0] (http://www.apache.org/licenses/LICENSE-2.0).

@@ -27,5 +27,5 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 	// Configure the following addresses:
-    implementation 'com.huawei.agconnect:agconnect-function:1.4.1.300'
+    implementation 'com.huawei.agconnect:agconnect-function:1.7.3.300'
 }
